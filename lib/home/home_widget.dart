@@ -10,9 +10,18 @@ class HomeWidget extends StatefulWidget {
 class _HomeWidgetState extends State<HomeWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('Home Page'),
+    return MaterialApp(
+      theme: ThemeData(backgroundColor: Colors.red[400]),
+      home: Scaffold(
+        body: Center(
+          child: Text(
+            'Home Page',
+            style: TextStyle(
+              fontSize: 18.0,
+              color: Colors.red,
+            ),
+          ),
+        ),
       ),
     );
   }
