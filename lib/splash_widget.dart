@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'home/home_widget.dart';
+import 'main/main_widget.dart';
 
 class SplashWidget extends StatelessWidget {
   @override
@@ -26,7 +26,7 @@ class SplashWidget extends StatelessWidget {
               /*延迟Delay结束，跳转首页*/
               Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(builder: (context) => HomeWidget()),
+                MaterialPageRoute(builder: (context) => MainWidget()),
                 /*跳转首页，把Splash页面关闭*/
                 (route) {
                   return route == null;
